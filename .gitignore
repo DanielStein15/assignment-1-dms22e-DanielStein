@@ -1,0 +1,9 @@
+node_modules/
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+dist/
+*.pyc
+fsu_works_2021_2026.jsonl
+.env
+.env.*
