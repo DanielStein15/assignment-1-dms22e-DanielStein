@@ -46,7 +46,12 @@ export function drawNetwork(svgElement, data) {
         .attr("fill-opacity", 0.75);
 
     node.append("title")
-        .text(d => d.id);
+        .text(d => 
+            `Title: ${d.title};
+    Year: ${d.year}
+    Venue: ${d.venue}
+    Authors: ${d.authors}`
+            );
 
     const simulation = d3.forceSimulation(nodes)
         .force(
